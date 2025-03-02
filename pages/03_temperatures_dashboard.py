@@ -52,7 +52,7 @@ print(temps_df.head())
 unique_countries_list = temps_df['Country'].unique()
 
 # TODO: Ex 3.4: Which are the minimum and maximum dates?
-min_date = 2000-01-01
+min_date = 2000-1-1
 max_date = 2019-12-31
 
 # TODO:  Ex 3.5: What are the global minimum and maximum temperatures? Find the city and the date of each of them.
@@ -60,7 +60,7 @@ min_temp = -16.77777777777778
 max_temp = 37.888888888888886
 
 min_temp_city = 'Bogota'
-min_temp_date = 2000-01-01
+min_temp_date = 2000-1-1
 
 max_temp_city = 'Washington' 
 max_temp_date = 2019-12-31
@@ -124,10 +124,11 @@ if unique_countries_list is not None and len(selected_cities) > 0:
     # every city has to be its own line with a different color.
 
     fig = plt.figure(figsize=(10, 5))
-
+    temps_df['AvgTemperatureCelsius'] = (temps_df['AvgTemperatureFahrenheit']-32)*5/9
+    temps_df['Date']= pd.to_datetime(temps_df['Date'])
     for city in selected_cities:
          city_df = temps_df[temps_df['City']== city]            # TODO
-         city_df_period = city_df[(city_df['Date'].dt.date >=start_date) & (city_df['Date'].dt.date <= end_date)]e     # TODO
+         city_df_period = city_df[(city_df['Date'].dt.date >=start_date) & (city_df['Date'].dt.date <= end_date)]     # TODO
          plt.plot(city_df_period['Date'], city_df_period['AvgTemperatureCelsius'], label =city)                # TODO 
     plt.title("Cities Temperature Line Plot")   # TODO
     plt.xlabel("Date")  # TODO
@@ -141,7 +142,7 @@ if unique_countries_list is not None and len(selected_cities) > 0:
     # every city has to be its own distribution with a different color.
 
     fig = plt.figure(figsize=(10, 5))
-
+    
     for city in selected_cities:
         city_df = temps_df[temps_df['City']== city]           # TODO
         city_df_period = city_df[(city_df['Date'].dt.date >=start_date) & (city_df['Date'].dt.date <= end_date)]    # TODO
