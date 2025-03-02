@@ -53,7 +53,7 @@ def home_page():
 
     # TODO: Modify and adapt the following lines to your info, you can add or remove some details if you want
     st.write("""
-    - 🧑‍💻 I am a master's student in big data & analytics. 
+    - 🧑‍💻 I am a master's student in Big Data & Analytics. 
 
     - 🛩️ prev: <Previous Experience, Background or Studies>
 

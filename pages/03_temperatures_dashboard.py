@@ -136,7 +136,7 @@ if unique_countries_list is not None and len(selected_cities) > 0:
 
     plt.legend(title='Cities')
     plt.show()
-    #c.pyplot(fig)
+    c.pyplot(fig)
 
     # TODO: Make a histogram of the temperature reads of a list of selected cities, for the selected time period, 
     # every city has to be its own distribution with a different color.
@@ -146,7 +146,7 @@ if unique_countries_list is not None and len(selected_cities) > 0:
     for city in selected_cities:
         city_df = temps_df[temps_df['City']== city]           # TODO
         city_df_period = city_df[(city_df['Date'].dt.date >=start_date) & (city_df['Date'].dt.date <= end_date)]    # TODO
-        plt.hist(city_df_period['AvgTemperatureCelsius'],bins=20)                # TODO
+        plt.hist(city_df_period['AvgTemperatureCelsius'],bins=20, alpha=0.6 ,label=city )                  # TODO
 
     plt.title("Cities Temperature Histogram Plot")   # TODO
     plt.xlabel("Temperature °C")  # TODO
@@ -154,7 +154,7 @@ if unique_countries_list is not None and len(selected_cities) > 0:
 
     plt.legend(title="City")
     plt.show()
-    #c.pyplot(fig)
+    c.pyplot(fig)
 
 
 
