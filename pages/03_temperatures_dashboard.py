@@ -49,8 +49,11 @@ print(temps_df.head())
 # ----- Extracting some basic information from the dataset -----
 
 # TODO: Ex 3.3: How many different cities are there? Provide a list of them.
-unique_cities_list = temps_df['City'].unique()
-unique_countries_list = temps_df['Country'].unique()
+unique_cities_list = ['Argentina' 'Australia' 'Colombia' 'Egypt' 'Germany' 'India' 'Japan'
+ 'Senegal' 'South Africa' 'US']
+unique_countries_list = ['Argentina' 'Australia' 'Colombia' 'Egypt' 'Germany' 'India' 'Japan'
+ 'Senegal' 'South Africa' 'US']
+
 
 # TODO: Ex 3.4: Which are the minimum and maximum dates?
 min_date = 2000-1-1
