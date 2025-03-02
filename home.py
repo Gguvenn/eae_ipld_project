@@ -4,7 +4,7 @@ import base64
     
 # ----- Page configs (tab title, favicon) -----
 st.set_page_config(
-    page_title="<Your Name> Portfolio",
+    page_title="<Gizem Güven> Portfolio",
     page_icon="📊",
 )
 
@@ -57,11 +57,11 @@ def home_page():
 
     - 🛩️ prev: <Previous Experience, Background or Studies>
 
-    - ❤️ <Your Passion and/or Interests>
+    - ❤️ <Your Passion and/or Interests> 
 
-    - 🤖 <Your Personal Projects>
+    - 🤖 <Your Personal Projects> 
 
-    - 🏂 <Your Hobbies>
+    - 🏂 <Your Hobbies> 
 
     - 📫 How to reach me: <Your Email>
 
