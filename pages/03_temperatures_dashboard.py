@@ -49,25 +49,25 @@ print(temps_df.head())
 # ----- Extracting some basic information from the dataset -----
 
 # TODO: Ex 3.3: How many different cities are there? Provide a list of them.
-unique_cities_list = ['Argentina' 'Australia' 'Colombia' 'Egypt' 'Germany' 'India' 'Japan'
- 'Senegal' 'South Africa' 'US']
-unique_countries_list = ['Argentina' 'Australia' 'Colombia' 'Egypt' 'Germany' 'India' 'Japan'
- 'Senegal' 'South Africa' 'US']
+unique_cities_list = ['Buenos Aires', 'Canberra', 'Bogota', 'Cairo', 'Munich', 'Calcutta', 'Tokyo',
+ 'Dakar', 'Capetown', 'Washington']
+unique_countries_list = ['Argentina', 'Australia', 'Colombia', 'Egypt', 'Germany', 'India', 'Japan',
+ 'Senegal', 'South Africa', 'US']
 
 
 # TODO: Ex 3.4: Which are the minimum and maximum dates?
-min_date = 2000-1-1
-max_date = 2019-12-31
+min_date = pd.to_datetime("2000-01-01").date()
+max_date = pd.to_datetime("2019-12-31").date()
 
 # TODO:  Ex 3.5: What are the global minimum and maximum temperatures? Find the city and the date of each of them.
 min_temp = -16.77777777777778
 max_temp = 37.888888888888886
 
 min_temp_city = 'Bogota'
-min_temp_date = 2000-1-1
+min_temp_date = pd.to_datetime("2000-01-01").date()
 
 max_temp_city = 'Washington' 
-max_temp_date = 2019-12-31
+max_temp_date = pd.to_datetime("2019-12-31").date()
 
 
 # ----- Displaying the extracted information metrics -----
@@ -140,7 +140,8 @@ if unique_countries_list is not None and len(selected_cities) > 0:
 
     plt.legend(title='Cities')
     plt.show()
-    c.pyplot(fig)
+    #c.pyplot(fig)
+    st.c.pyplot(fig)
 
     # TODO: Make a histogram of the temperature reads of a list of selected cities, for the selected time period, 
     # every city has to be its own distribution with a different color.
@@ -158,7 +159,8 @@ if unique_countries_list is not None and len(selected_cities) > 0:
 
     plt.legend(title="City")
     plt.show()
-    c.pyplot(fig)
+    #c.pyplot(fig)
+    st.c.pyplot(fig)
 
 
 
