@@ -135,8 +135,8 @@ if unique_countries_list is not None and len(selected_cities) > 0:
     plt.ylabel("Temperature °C") # TODO
 
     plt.legend(title='Cities')
-    
-    c.pyplot(fig)
+    plt.show()
+    #c.pyplot(fig)
 
     # TODO: Make a histogram of the temperature reads of a list of selected cities, for the selected time period, 
     # every city has to be its own distribution with a different color.
@@ -153,8 +153,8 @@ if unique_countries_list is not None and len(selected_cities) > 0:
     plt.ylabel("f")  # TODO
 
     plt.legend(title="City")
-
-    c.pyplot(fig)
+    plt.show()
+    #c.pyplot(fig)
 
 
 
