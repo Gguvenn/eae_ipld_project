@@ -41,7 +41,7 @@ def home_page():
 
 
     # ----- Personal title or short description -----
-    current_role = "Big Data & Analytics student at EAE Business School - Textile Engineer"   # TODO: Change this
+    current_role = "Master in Big Data & Analytics  - Textile Engineer"   # TODO: Change this
 
     st.html(f"""<div style="text-align: center;"><h4><i>{current_role}</i></h4></div>""")
 
@@ -53,7 +53,7 @@ def home_page():
 
     # TODO: Modify and adapt the following lines to your info, you can add or remove some details if you want
     st.write("""
-    - 🧑‍💻 I am a <Master student in Big Data & Analytics> 
+    - 🧑‍💻 I am a <master's student in big data & analytics.> 
 
     - 🛩️ prev: <Previous Experience, Background or Studies>
 
