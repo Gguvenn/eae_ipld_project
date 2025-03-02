@@ -49,6 +49,7 @@ print(temps_df.head())
 # ----- Extracting some basic information from the dataset -----
 
 # TODO: Ex 3.3: How many different cities are there? Provide a list of them.
+unique_cities_list = temps_df['City'].unique()
 unique_countries_list = temps_df['Country'].unique()
 
 # TODO: Ex 3.4: Which are the minimum and maximum dates?
